@@ -2167,13 +2167,13 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
+	.image, .blurbImage {
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
-		.image:after {
+		.image:after, .blurbImage:after {
 			-moz-transition: opacity 0.25s ease-in-out;
 			-webkit-transition: opacity 0.25s ease-in-out;
 			-ms-transition: opacity 0.25s ease-in-out;
@@ -2189,37 +2189,37 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.image img {
+		.image img, .blurbImage img {
 			display: block;
 		}
 
-		.image.fit {
+		.image.fit, .blurbImage.fit{
 			display: block;
 		}
 
-			.image.fit img {
+			.image.fit img, .blurbImage.fit img{
 				display: block;
 				width: 100%;
 			}
 
-		.image.feature {
+		.image.feature, .blurbImage.feature{
 			display: block;
 			margin: 0 0 2em 0;
 		}
 
-			.image.feature img {
+			.image.feature img, .blurbImage.feature img{
 				display: block;
 				width: 100%;
 			}
 
-		.image.icon {
+		.image.icon, .blurbImage.icon{
 			-moz-perspective: 500px;
 			-webkit-perspective: 500px;
 			-ms-perspective: 500px;
 			perspective: 500px;
 		}
 
-			.image.icon:before {
+			.image.icon:before, .blurbImage.icon:before {
 				-moz-transition: -moz-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
 				-webkit-transition: -webkit-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
 				-ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
@@ -2237,18 +2237,18 @@ input, select, textarea {
 				z-index: 1;
 			}
 
-			.image.icon:hover:before {
+			.image.icon:hover:before, .blurbImage.icon:hover:before {
 				-moz-transform: translateZ(1em);
 				-webkit-transform: translateZ(1em);
 				-ms-transform: translateZ(1em);
 				transform: translateZ(1em);
 			}
 
-			.image.icon:hover:after {
-				opacity: 1;
+			.image.icon:hover:after, .blurbImage.icon:hover:after {
+				opacity: 0;
 			}
 
-	span.image.icon {
+	span.image.icon, span.blurbImage.icon {
 		cursor: default;
 	}
 
@@ -2796,7 +2796,7 @@ input, select, textarea {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #4eb980;
+		background-color: #006830;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
